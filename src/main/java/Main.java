@@ -8,9 +8,9 @@ public class Main {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
-            System.out.print("Please, enter first IP-address: ");
+            System.out.print("Enter first IP-address: ");
             Ip ipFirst = new Ip(reader.readLine());
-            System.out.print("Please, enter last IP-address: ");
+            System.out.print("Enter last IP-address: ");
             Ip ipLast = new Ip(reader.readLine());
             SearchIpImpl search = new SearchIpImpl();
             search.searchInterval(ipFirst, ipLast);
